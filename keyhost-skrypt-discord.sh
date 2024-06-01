@@ -187,6 +187,8 @@ run_bot() {
     fi
 
     pm2 start "$selected_file"
+    pm2 startup 
+    pm2 save
 }
 
 restart_bot() {
